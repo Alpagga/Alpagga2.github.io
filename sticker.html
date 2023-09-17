@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--JQuery-->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!--AnimeJS-->
+  <script src="node_modules/animejs/lib/anime.js"></script>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+        <!--INSERT NAVBAR-->    
+
+        <div class="container-fluid" style="margin-top: 5%;">
+            <h1>
+                Sticker are for sharing!
+            </h1>  
+
+        <!--Forms-->
+        <div class="container-fluid" ></div>
+            <form>
+                <div class="form-group">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--SubmitButton-->
+            <div style="margin-top: 5%;">
+                <div class="button">
+                    <div class="text">Submit</div>
+                    
+                </div>
+            
+                <div class="progress-bar"></div>
+            
+                <svg id="svgCheckButton" x="0px" y="0px" viewBox="0 0 25 30" style="enable-background: new 0 0 25 30">
+                    <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+                </svg>
+            </div>
+
+        <!--End Form Container-->    
+        </div>   
+
+
+    <script>
+        /*Timeline Animation*/
+        var basicTimeline = anime.timeline({
+          autoplay: false,
+        });
+  
+        var pathEls = $(".check");
+        for (var i = 0; i < pathEls.length; i++) {
+          var pathEl = pathEls[i];
+          var offset = anime.setDashoffset(pathEl);
+          pathEl.setAttribute("stroke-dashoffset", offset);
+        }
+  
+        basicTimeline
+          .add({
+            targets: ".text",
+            duration: 1,
+            opacity: "0",
+          })
+          .add({
+            targets: ".button",
+            duration: 900,
+            height: 10,
+            width: 300,
+            backgroundColor: "#2B2D2F",
+            border: "0",
+            borderRadius: 100,
+          })
+          .add({
+            targets: ".progress-bar",
+            duration: 2000,
+            width: 300,
+            easing: "linear",
+            backgroundColor: "rgb(250, 125, 0)",
+          })
+          .add({
+            targets: ".button",
+            width: 0,
+            duration: 1,
+          })
+          .add({
+            targets: ".progress-bar",
+            width: 80,
+            height: 80,
+            delay: 500,
+            duration: 750,
+            borderRadius: 80,
+            backgroundColor: "rgb(250, 125, 0)",
+          })
+          .add({
+            targets: pathEl,
+            strokeDashoffset: [offset, 0],
+            duration: 200,
+            easing: "easeInOutSine",
+          });
+  
+        $(".button").click(function () {
+          basicTimeline.play();
+        });
+  
+        $(".text").click(function () {
+          basicTimeline.play();
+        });
+  
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+@font-face {
+  font-family: Isobare-Regular;
+  src: url("/Fonts/Spécimen ISOBARE/Isobare-Regular.otf");
+}
+
+h1 {
+    text-align: center;
+    color: rgb(250, 125, 0);
+    font-family: Isobare-Regular;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    height: 100%;
+}
+
+/* change the link color */
+.navbar .navbar-nav .nav-link {
+    color: #ffbb00 ;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: monospace;
+    margin-left: 5vw;
+    text-align:right ;
+}
+
+
+/* change the scheme of active or hovered links */
+.navbar .nav-item:hover .nav-link {
+    color: black;
+    background-color: rgb(250, 125, 0);
+}
+
+
+/* Navigation Fade In */
+#elementToFadeIn {
+    -webkit-animation: fadein 3s ease-out forwards;
+    animation: fadein 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0s;
+}
+
+@keyframes fadein {
+  100% { opacity: 1; }
+}
+
+
+
+/*Navbar Dropdown*/
+.dropdown .dropdown-menu{
+    background-color: black;
+}
+
+.dropdown .dropdown-menu .dropdown-item{
+    color: rgb(250, 125, 0);
+    background-color: black;
+}
+
+.dropdown .dropdown-item:hover {
+    color: black;
+    background-color:rgb(250, 125, 0);
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: black;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;
+    background-color: black;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+/**************/
+/*Gallery Page*/
+/**************/
+
+#gallery{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+  color: rgb(250, 125, 0);
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+h1 {
+  position: relative;
+  z-index: 10
+}
+
+a {
+  color: #FFE37B;
+  text-decoration: none;
+}
+.videoButton, .printButton, .stickerButton{
+  width: 30%;
+  background-color: rgb(250, 125, 0);
+  border-color: rgb(250, 125, 0);
+  border: 0cm;
+  
+}
+
+/*Waves*/
+.wave-top {
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  width: 130%;
+  rotate: 180deg;
+  height: 60%;
+}
+
+.wave-bottom {
+    position: absolute;
+    bottom: 0vh;
+    left: 0;
+    width: 130%;
+    height: 60%;
+  }
+
+  
+  /***************/
+  /*Submit Button*/
+  /***************/
+
+  .submitButton {
+      height: 100vh;
+      width: 100vw;
+  }
+  
+  .button {
+    background: rgb(250, 125, 0);
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    transform: translateY(50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .text {
+    font-family: Isobare-Regular;
+    font-size: xx-large;
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-52%);
+    left: 0;
+    right: 0;
+  }
+
+
+
+  /*Check Button*/
+  #svgCheckButton {
+    width: 40px;
+    position: relative;
+    transform: translateY(-190%) translateX(-50%);
+    left: 50%;
+    right: 0;
+    top: -10px;
+  }
+
+  .check {
+    position: relative;
+    fill: none;
+    stroke: black;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4px;
+  }
+
+ /*Progress Bar*/ 
+  .progress-bar {
+    position: relative;
+    height: 10px;
+    width: 0;
+    right: 0;
+    top: 10%;
+    left: 50%;
+    border-radius: 200px;
+    transform: translateY(-50%) translateX(-50%);
+    background: lighten(rgb(250, 125, 0), 15%);
+  }
+  
+  /*Form*/
+  .form-group{
+    color: rgb(250, 125, 0);
+    width: 66%;
+    margin: auto;
+  }
+
+  .form-control{
+    background-color: black;
+    border-color: rgb(250, 125, 0);
+  }
+
+  input[type=text]:focus,input[type=email]:focus,input[type=text]:focus   {
+    background-color: rgb(250, 125, 0);
+    opacity: 0.5;
+  }
