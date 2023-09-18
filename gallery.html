@@ -16,7 +16,7 @@
   <!--CSS-->
     <link href="style.css" rel="stylesheet" />
 </head>
-<body id="gallery">
+<body class="gallery">
        
         <!--
           <a href="https://animejs.com/" target="_blank">Anime.js</a> 
@@ -25,17 +25,8 @@
           https://codepen.io/collection/XLebem/?cursor=eyJwYWdlIjoxMH0=
         -->
 
-      <div>
-        <button class="videoButton">fasd</button>
-        <button class="printButton">
-          fasdf
-        </button>
-        <button class="stickerButton">
-          fasdf
-        </button>
-      </div>
-  
 
+      <!--WAVES-->  
       <svg class="wave-top" preserveAspectRatio="none" viewBox="0 0 1200 270">
         <path
           fill-rule="evenodd"
@@ -54,7 +45,17 @@
         />
       </svg>
    
+      <div class="buttonGalleryVideo">
+        <div class="textGalleryVideo">Video</div>              
+      </div>
+      <div class="buttonGalleryPrint">
+        <div class="textGalleryPrint">Print</div>              
+      </div>
+      <div class="buttonGallerySticker">
+        <div class="textGallerySticker">Sticker</div>              
+      </div>
 
+   
     <script>
       /*WAVE ANIMATION*/
       const wave1 =
@@ -96,19 +97,107 @@
 
 
        //VIDEO-BUTTON TIMELINE
-       var videoTimeline = anime.timeline({
+        var videoTimelineBottom = anime.timeline({
+          autoplay: false,
+        })
+        var videoTimelineTop = anime.timeline({
+          autoplay: false,
+        })
+        var buttonTimeline = anime.timeline({
           autoplay: false,
         })
 
-        videoTimeline
+        videoTimelineBottom
           .add({
             targets: ".wave-bottom > path",
             easing: "linear",
             duration: 2000,
             opacity: "0",
+            translateX: -250
           });
+        videoTimelineTop
+          .add({
+            targets: ".wave-top > path",
+            easing: "linear",
+            duration: 2000,
+            opacity: "0",
+            translateX: -250
+          });
+        buttonTimeline
+          .add({
+              targets: ".text",
+              easing: "linear",
+              duration: 300,
+              opacity: "0",
+            })  
+          .add({
+              targets: ['.buttonGalleryVideo','.buttonGalleryPrint','.buttonGallerySticker'],
+              easing: "linear",
+              duration: 2000,
+              opacity: "0",
+            });
           
-          document.querySelector('.wave-bottom > path .videoButton').onclick = videoTimeline.play;
+
+        function redirectVideo(){
+          window.location.href = "/gallery/video.html";
+        }    
+        //Button Video    
+        $(".textGalleryVideo").click(function(){
+          videoTimelineBottom.play();
+          videoTimelineTop.play();
+          buttonTimeline.play();
+          setTimeout(function(){ 
+            window.location.href = "/gallery/video.html";
+          }, 2300);
+        });
+
+        $(".buttonGalleryVideo").click(function(){
+          videoTimelineBottom.play();
+          videoTimelineTop.play();
+          buttonTimeline.play();
+          setTimeout(function(){ 
+            window.location.href = "/gallery/video.html";
+          }, 2300);
+        });
+
+        //Button Print    
+        $(".textGalleryPrint").click(function(){
+          videoTimelineBottom.play();
+          videoTimelineTop.play();
+          buttonTimeline.play();
+          setTimeout(function(){ 
+            window.location.href = "/gallery/print.html";
+          }, 2300);
+        });
+
+        $(".buttonGalleryPrint").click(function(){
+          videoTimelineBottom.play();
+          videoTimelineTop.play();
+          buttonTimeline.play();
+          setTimeout(function(){ 
+            window.location.href = "/gallery/print.html";
+          }, 2300);
+        });
+
+        //Button Video    
+        $(".textGallerySticker").click(function(){
+          videoTimelineBottom.play();
+          videoTimelineTop.play();
+          buttonTimeline.play();
+          setTimeout(function(){ 
+            window.location.href = "/gallery/sticker.html";
+          }, 2300);
+        });
+
+        $(".buttonGallerySticker").click(function(){
+          videoTimelineBottom.play();
+          videoTimelineTop.play();
+          buttonTimeline.play();
+          setTimeout(function(){ 
+            window.location.href = "/gallery/sticker.html";
+          }, 2300);
+        });
+
     </script>
 
 </body>
