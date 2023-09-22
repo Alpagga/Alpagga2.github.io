@@ -284,12 +284,118 @@ a {
   }
 
   .line{
-    background: rgb(250, 125, 0);
+    background: black;
     height: 0.5vh;
-    width: 70vw;
+    width: 85vw;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
     cursor: pointer;
     border-radius: 4px;
   }
+
+/*********************/
+/*VIDEO SMOOTH SCROLL*/
+/*********************/
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section {
+  float:left;
+  width:100%;
+  background:rgb(250, 125, 0);
+  position:relative;
+}
+
+
+/* the important styles */
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top:-20em;
+  margin-left:-5em;
+  background:#111;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 80px 0px rgb(250, 125, 0);
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: rgb(250, 125, 0) transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+
+.hint {
+  position:absolute;
+  top:0.6em;
+  width:100%;
+  left:0;
+  font-size:2em;
+  font-style:italic;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+}
+
+
+.arrow-wrap:hover .hint {
+  opacity:1;
+}
+
+
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  /*Hint Timer*/
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 4s;
+  }
+
+/*  this is the unimportant CSS used just to layout the content  */
+header {
+  width:100%;
+  color: rgb(250, 125, 0);
+  height: 100%;
+  /*height:calc(100% - 3em);*/
+}
