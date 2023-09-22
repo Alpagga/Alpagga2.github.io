@@ -54,6 +54,9 @@
       <div class="buttonGallerySticker">
         <div class="textGallerySticker">Sticker</div>              
       </div>
+      <div class="buttonGalleryMusic">
+        <div class="textGalleryMusic">Music</div>              
+      </div>
 
    
     <script>
@@ -131,7 +134,7 @@
               opacity: "0",
             })  
           .add({
-              targets: ['.buttonGalleryVideo','.buttonGalleryPrint','.buttonGallerySticker'],
+              targets: ['.buttonGalleryVideo','.buttonGalleryPrint','.buttonGallerySticker', '.buttonGalleryMusic'],
               easing: "linear",
               duration: 2000,
               opacity: "0",
@@ -195,6 +198,25 @@
           buttonTimeline.play();
           setTimeout(function(){ 
             window.location.href = "/gallery/sticker.html";
+          }, 2300);
+        });
+
+        //Button Music    
+        $(".textGalleryMusic").click(function(){
+          videoTimelineBottom.play();
+          videoTimelineTop.play();
+          buttonTimeline.play();
+          setTimeout(function(){ 
+            window.location.href = "/gallery/music.html";
+          }, 2300);
+        });
+
+        $(".buttonGalleryMusic").click(function(){
+          videoTimelineBottom.play();
+          videoTimelineTop.play();
+          buttonTimeline.play();
+          setTimeout(function(){ 
+            window.location.href = "/gallery/music.html";
           }, 2300);
         });
 

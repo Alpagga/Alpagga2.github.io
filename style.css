@@ -1,3 +1,5 @@
+/*#FA7D00*/
+
 @font-face {
   font-family: Isobare-Regular;
   src: url("/Fonts/SpecimenISOBARE/Isobare-Regular.otf");
@@ -122,7 +124,7 @@ a {
   text-decoration: none;
 }
 
-.buttonGalleryVideo, .buttonGalleryPrint, .buttonGallerySticker{
+.buttonGalleryVideo, .buttonGalleryPrint, .buttonGallerySticker, .buttonGalleryMusic{
   background: rgb(250, 125, 0);
   height: 80px;
   width: 200px;
@@ -136,7 +138,7 @@ a {
   transform: translateY(-100%);
 }
 
-.textGalleryVideo, .textGalleryPrint, .textGallerySticker{
+.textGalleryVideo, .textGalleryPrint, .textGallerySticker, .textGalleryMusic{
   font-family: Isobare-Regular;
   font-size: xx-large;
   color: black;
@@ -398,4 +400,12 @@ header {
   color: rgb(250, 125, 0);
   height: 100%;
   /*height:calc(100% - 3em);*/
+}
+
+/*******/
+/*PRINT*/
+/*******/
+
+.print{
+  width: 75vw;
 }
