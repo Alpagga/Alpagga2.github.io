@@ -340,7 +340,7 @@ window.lavaAnimation = (function () {
       },
       a = i.screen.init("lavaLampAnimation", null, !0),
       o = a.ctx;
-    a.resize(), (t = new e(a.width, a.height, 6, "#FA7D00", "#FA7D00"));
+    a.resize(), (t = new e(a.width, a.height, 6, "black", "black"));
   }
   return { run: n };
 })();
