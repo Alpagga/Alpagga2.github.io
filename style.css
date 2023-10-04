@@ -12,7 +12,7 @@ h1 {
 }
 
 .heading{
-  margin-top: 18vh; 
+  margin-top: 27vh; 
   margin-bottom: 2%;
 }
 
@@ -35,23 +35,56 @@ body{
   margin-top: 5vh;
 }
 
-/* change the link color */
-.navbar .navbar-nav .nav-link {
-    color: #ffbb00 ;
-    font-size: x-large;
-    font-weight: bold;
-    font-family: monospace;
-    margin-left: 5vw;
-    text-align:right ;
+/*NAVBAR*/
+.navbar-collapse{
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar-collapse .nav-link{
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-family: Isobare-Regular;
+  color: rgb(250, 125, 0);
+}
+
+.navbar-collapse .nav-item:not(:last-child){
+  border-bottom: 1px solid rgb(250, 125, 0);
+  padding: 0.2em 4em;
+}
+
+@media  screen and (min-width: 576px) {
+  .navbar-collapse .nav-item:not(:last-child){
+    padding: 0.4em 7em;
+  }
 }
 
 
-/* change the scheme of active or hovered links */
-.navbar .nav-item:hover .nav-link {
-    color: black;
-    background-color: rgb(250, 125, 0);
+.navbar-collapse .nav-link:hover,
+.navbar-collapse .nav-link.active{
+  color: rgb(250, 125, 0);
 }
 
+
+.navbar-toggler{
+  z-index: 1;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+.navbar-collapse.show{
+  transition: all 0.5s;
+}
 
 /* Navigation Fade In */
 #elementToFadeIn {
@@ -65,39 +98,6 @@ body{
   100% { opacity: 1; }
 }
 
-
-
-/*Navbar Dropdown*/
-.dropdown .dropdown-menu{
-    background-color: black;
-}
-
-.dropdown .dropdown-menu .dropdown-item{
-    color: rgb(250, 125, 0);
-    background-color: black;
-}
-
-.dropdown .dropdown-item:hover {
-    color: black;
-    background-color:rgb(250, 125, 0);
-}
-
-.dropdown a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: black;
-    transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;
-    background-color: black;
-}
-
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
 /**************/
 /*Gallery Page*/
 /**************/
@@ -125,28 +125,38 @@ a {
 }
 
 .buttonGalleryVideo, .buttonGalleryPrint, .buttonGallerySticker, .buttonGalleryMusic{
-  background: rgb(250, 125, 0);
-  height: 80px;
+  background: black;
+  height: 8vh;
   width: 200px;
   text-align: center;
-  position: relative;
-  top: 10%;
-  margin: 2%;
+  position: absolute;
   cursor: pointer;
   border-radius: 4px;
-  display: inline;
-  transform: translateY(-100%);
+  top: 0;
+}
+
+
+
+
+@media  screen and (min-width: 576px) {
+  .textGalleryVideo, .textGalleryPrint, .textGallerySticker{
+    padding: 0.4em 7em;
+  }
 }
 
 .textGalleryVideo, .textGalleryPrint, .textGallerySticker, .textGalleryMusic{
   font-family: Isobare-Regular;
-  font-size: xx-large;
-  color: black;
+  font-size: 2em;
+  color: rgb(250, 125, 0);
   position: absolute;
   top: 50%;
   transform: translateY(-52%);
   left: 0;
   right: 0;
+}
+.textGalleryVideo, .textGalleryPrint, .textGallerySticker{
+  border-bottom: 1px solid rgb(250, 125, 0);
+  padding: 0.5em ;
 }
 
 /*Waves*/
@@ -154,17 +164,17 @@ a {
   position: absolute;
   top: 0vh;
   left: 0;
-  width: 130%;
+  width: 100vw;
   rotate: 180deg;
-  height: 60%;
+  height: 30vh;
 }
 
 .wave-bottom {
     position: absolute;
     bottom: 0vh;
     left: 0;
-    width: 130%;
-    height: 60%;
+    width: 100vw;
+    height: 30vh;
   }
 
   
@@ -398,6 +408,28 @@ section {
 header {
   width:100%;
   color: rgb(250, 125, 0);
-  height: 100%;
+  height: 73vh;
   /*height:calc(100% - 3em);*/
+}
+
+#lavaLampAnimation{
+  position: absolute; 
+  width: 100vw; 
+  background-color: rgb(250, 125, 0); 
+  display: flex; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+.Animations{
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  width: 80vw;
+  border: 1.5vh solid black;
 }
