@@ -1,93 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Landing</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>  
-  <!--AnimeJS-->
+  <head>
+    <title>Landing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--AnimeJS-->
     <!--<script src="node_modules/animejs/lib/anime.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <!--CSS-->
-    <link href="style.css" rel="stylesheet">
-  <!--Custom Script-->
-    
-</head>
-<body>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet" />
+    <!--Custom Script-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
 
+          <div
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="spiral"
+              width="40px"
+              height="40px"
+              viewBox="0 0 3391 3383"
+              style="margin-right: auto"
+              z-index:
+              1;
+            >
+              <path
+                d="M1404.33,3365c511.5,74.704 1007.62,-95.542 1396.96,-479.371c385.041,-379.608 605.166,-915.312 588.791,-1432.98c-16.5,-521.854 -270.542,-1010.69 -734.666,-1413.67c-66.376,-57.625 -166.917,-50.537 -224.542,15.825c-57.584,66.434 -50.5,166.892 15.833,224.504c401.083,348.217 611.417,746.371 625.25,1183.41c16.042,507.004 -244.708,950.379 -494.125,1196.26c-405.833,400.059 -837.125,433.488 -1127.5,391.083c-412.375,-60.225 -799.917,-319.458 -987.291,-660.416c-368.334,-670.2 26.499,-1383.45 453.125,-1640.71c311,-187.513 600.166,-166.53 787.958,-115.9c271.042,73.062 501.916,252.529 633.458,492.396c122.708,223.708 140.042,496.358 47.625,748.033c-92.458,251.787 -277.208,446.558 -506.916,534.396c-170.959,65.383 -372.834,52.587 -553.917,-35.096c-184.583,-89.371 -322.083,-241.733 -377.333,-418.013c-46.626,-148.804 -27,-319.137 53.791,-467.341c74.958,-137.067 189.75,-235.584 315.5,-270.221c165.25,-45.521 469.625,-34.329 562.25,296.4c41.959,149.854 -25.542,296.887 -157.333,349.475c22.375,-61.629 23.583,-128.48 2.583,-191.642c-24.666,-74.217 -76.75,-134.383 -146.666,-169.421c-69.917,-35.046 -149.292,-40.758 -223.5,-16.096c-70.376,23.384 -128.084,71.405 -163.751,135.88c-1.958,3.55 -3.874,7.15 -5.666,10.795c-32.125,64.092 -38.333,134.446 -22.792,199.238c1.25,6.037 2.792,12.067 4.75,18.062c0.459,1.304 0.958,2.559 1.417,3.859c1.041,3.262 2.333,6.446 3.5,9.675c93.25,256.379 375.125,394.045 635.667,307.479c300.791,-100 466.958,-426.408 378.25,-743.137c-133.126,-475.413 -580.292,-620.155 -953.25,-517.417c-206.792,56.966 -391.5,209.708 -507.542,419.525c-0.959,1.725 -1.917,3.454 -2.833,5.175c-121.917,223.587 -150.375,484.137 -78.084,714.866c81.375,259.738 279.042,481.821 542.334,609.321c259.791,125.804 553.666,142.538 806.333,45.921c315.625,-120.704 567.833,-383.896 692,-721.958c124.125,-338.013 99.583,-706.442 -67.333,-1010.8c-173.001,-315.463 -475.417,-551.163 -829.709,-646.663c-349.958,-94.337 -717.583,-40.833 -1035.12,150.638c-220.208,132.775 -414.208,342.183 -549.208,586.233c-47.584,86.05 -87.833,176.417 -119.334,269.238c-138.958,409.829 -103.166,839.937 100.792,1211.09c237.292,431.808 704.875,746.804 1220.25,822.067Z"
+                style="fill: rgb(250, 125, 0)"
+              />
+            </svg>
+          </div>
 
-    <div class="container-fluid" id="elementToFadeIn">
-        <nav class="navbar fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-        
-              <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <svg 
-                    class="spiral"
-                    width="40px"
-                    height="40px"
-                    viewBox="0 0 3391 3383"
-                    style="margin-right: auto"
-                    z-index: 1;
-                  >
-                    <path
-                      d="M1404.33,3365c511.5,74.704 1007.62,-95.542 1396.96,-479.371c385.041,-379.608 605.166,-915.312 588.791,-1432.98c-16.5,-521.854 -270.542,-1010.69 -734.666,-1413.67c-66.376,-57.625 -166.917,-50.537 -224.542,15.825c-57.584,66.434 -50.5,166.892 15.833,224.504c401.083,348.217 611.417,746.371 625.25,1183.41c16.042,507.004 -244.708,950.379 -494.125,1196.26c-405.833,400.059 -837.125,433.488 -1127.5,391.083c-412.375,-60.225 -799.917,-319.458 -987.291,-660.416c-368.334,-670.2 26.499,-1383.45 453.125,-1640.71c311,-187.513 600.166,-166.53 787.958,-115.9c271.042,73.062 501.916,252.529 633.458,492.396c122.708,223.708 140.042,496.358 47.625,748.033c-92.458,251.787 -277.208,446.558 -506.916,534.396c-170.959,65.383 -372.834,52.587 -553.917,-35.096c-184.583,-89.371 -322.083,-241.733 -377.333,-418.013c-46.626,-148.804 -27,-319.137 53.791,-467.341c74.958,-137.067 189.75,-235.584 315.5,-270.221c165.25,-45.521 469.625,-34.329 562.25,296.4c41.959,149.854 -25.542,296.887 -157.333,349.475c22.375,-61.629 23.583,-128.48 2.583,-191.642c-24.666,-74.217 -76.75,-134.383 -146.666,-169.421c-69.917,-35.046 -149.292,-40.758 -223.5,-16.096c-70.376,23.384 -128.084,71.405 -163.751,135.88c-1.958,3.55 -3.874,7.15 -5.666,10.795c-32.125,64.092 -38.333,134.446 -22.792,199.238c1.25,6.037 2.792,12.067 4.75,18.062c0.459,1.304 0.958,2.559 1.417,3.859c1.041,3.262 2.333,6.446 3.5,9.675c93.25,256.379 375.125,394.045 635.667,307.479c300.791,-100 466.958,-426.408 378.25,-743.137c-133.126,-475.413 -580.292,-620.155 -953.25,-517.417c-206.792,56.966 -391.5,209.708 -507.542,419.525c-0.959,1.725 -1.917,3.454 -2.833,5.175c-121.917,223.587 -150.375,484.137 -78.084,714.866c81.375,259.738 279.042,481.821 542.334,609.321c259.791,125.804 553.666,142.538 806.333,45.921c315.625,-120.704 567.833,-383.896 692,-721.958c124.125,-338.013 99.583,-706.442 -67.333,-1010.8c-173.001,-315.463 -475.417,-551.163 -829.709,-646.663c-349.958,-94.337 -717.583,-40.833 -1035.12,150.638c-220.208,132.775 -414.208,342.183 -549.208,586.233c-47.584,86.05 -87.833,176.417 -119.334,269.238c-138.958,409.829 -103.166,839.937 100.792,1211.09c237.292,431.808 704.875,746.804 1220.25,822.067Z"
-                      style="fill: rgb(250, 125, 0)"
-                    />
-                  </svg>
-                </div>
-        
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sticker.html">Sticker</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="connect.html">Connect</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </div>
-
-    <div class="container-fluid w-75" style="margin-top: 5%;">
-        <video autoplay loop muted class="embed-responsive embed-responsive-21by9 w-100 justify-content-center" id="planet">
-            <source src="videos/planet.mov">
-        </video>
-    </div>
-
-    <footer class="fixed-bottom text-center text-lg-start" id="elementToFadeIn">
-        <div class="container d-flex justify-content-center py-5">
-            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: rgb(250, 125, 0);">
-                <i class="fab fa-youtube"></i>
-            </button>
-            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: rgb(250, 125, 0);">
-                <i class="fab fa-instagram"></i>
-            </button>
-            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: rgb(250, 125, 0);">
-                <i class="fab fa-twitter"></i>
-            </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sticker.html">Sticker</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="connect.html">Connect</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </div>
 
-            <!-- Copyright -->
-            <div class="text-white p-3">
-                © 2023 ThirdEyeOpen
-            </div>
-            <!-- Copyright -->
+    <div class="container-fluid w-75" style="margin-top: 15vh">
+      <video
+        autoplay
+        loop
+        muted
+        class="embed-responsive embed-responsive-21by9 w-100 justify-content-center"
+        id="planet"
+      >
+        <source src="videos/planet.mov" />
+      </video>
+    </div>
+
+    <footer class="fixed-bottom text-center">
+      
+      <div class="container d-flex justify-content-center py-5" style="margin-bottom: -5vh;">
+        <!-- Email -->
+        <a class="btn btn-floating" href="mailto:thirdeyeopen.info@gmail.com" role="button">
+          <svg width="22" height="22" viewBox="0 0 16 16">
+            <path id="sozialMedia"
+              fill-rule="evenodd"
+              d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z"
+              style="fill: rgb(250, 125, 0)"
+            />
+          </svg>
+        </a>
+
+        <!-- Youtube -->
+        <a class="btn btn-floating" href="https://www.youtube.com/channel/UCtIwraCI8LQ_w0b84Vucd3A" role="button">
+          <svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+            <path id="sozialMedia"
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+              style="fill: rgb(250, 125, 0)"
+            />
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn btn-floating" href="https://www.instagram.com/thirdeyeopen.3eo/" role="button">
+          <svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+            <path id="sozialMedia"
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              style="fill: rgb(250, 125, 0)"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-white p-3">© ThirdEyeOpen</div>
+      <!-- Copyright -->
     </footer>
-    
-    <script type="text/javascript" src="navbar.js"></script> 
-</body>
+
+    <script type="text/javascript" src="navbar.js"></script>
+  </body>
 </html>
