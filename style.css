@@ -79,6 +79,7 @@ body{
 
 .navbar-toggler{
   z-index: 1;
+  background-color: black;
 }
 
 .navbar-toggler:focus{
@@ -444,4 +445,24 @@ header {
 
 .sticker{
   position: absolute;
+}
+
+.skateboard{
+  position: absolute;
+  width: 480px; 
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media  screen and (min-width: 720px) {
+  .skateboard{
+    width: 700px; 
+  }
+}
+
+@media  screen and (min-width: 1080px) {
+  .skateboard{
+    width: 1000px; 
+  }
 }
