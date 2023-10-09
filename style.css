@@ -449,10 +449,10 @@ header {
 
 .skateboard{
   position: absolute;
-  width: 480px; 
   right: 0;
   left: 0;
   margin: auto;
+  width: 480px; 
 }
 
 @media  screen and (min-width: 720px) {
