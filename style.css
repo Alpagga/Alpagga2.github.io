@@ -437,3 +437,11 @@ header {
   width: 80vw;
   border: 1.5vh solid black;
 }
+
+/*********/
+/*STICKER*/
+/*********/
+
+.sticker{
+  position: absolute;
+}
