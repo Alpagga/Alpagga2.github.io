@@ -452,12 +452,17 @@ header {
   right: 0;
   left: 0;
   margin: auto;
-  width: 300px; 
 }
 
-@media  screen and (min-width: 720px) {
+@media  screen and (max-width: 720px) {
   .skateboard{
-    width: 500px; 
+    width: 300px; 
+  }
+}
+
+@media  screen and (max-width: 1080px) {
+  .skateboard{
+    width: 700px; 
   }
 }
 
