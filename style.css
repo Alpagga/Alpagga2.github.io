@@ -454,20 +454,38 @@ header {
   margin: auto;
 }
 
-@media  screen and (max-width: 720px) {
+@media  screen and (min-width: 320px) {
   .skateboard{
     width: 300px; 
   }
 }
 
-@media  screen and (max-width: 1080px) {
+@media  screen and (min-width: 481px) {
   .skateboard{
-    width: 700px; 
+    width: 400px; 
   }
 }
 
-@media  screen and (min-width: 1080px) {
+@media  screen and (min-width: 641px) {
+  .skateboard{
+    width: 600px; 
+  }
+}
+
+@media  screen and (min-width: 961px) {
+  .skateboard{
+    width: 900px; 
+  }
+}
+
+@media  screen and (min-width: 1025px) {
   .skateboard{
     width: 1000px; 
+  }
+}
+
+@media  screen and (min-width: 1281px) {
+  .skateboard{
+    width: 1200px; 
   }
 }
