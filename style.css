@@ -443,8 +443,11 @@ header {
 /*STICKER*/
 /*********/
 
-.sticker{
+.sticker1, .sticker2, .sticker3, .sticker4, .sticker5{
   position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 .skateboard{
@@ -458,11 +461,41 @@ header {
   .skateboard{
     width: 300px; 
   }
+  .sticker1{
+    width: 245px; left: -10px; top: 330px;
+  }
+  .sticker2{
+    width: 80px; left: 110px; top: 380px;
+  }
+  .sticker3{
+    width: 80px; left: -110px; top: 520px;
+  }
+  .sticker4{
+    width: 80px; left: -110px; top: 380px;
+  }
+  .sticker5{
+    width: 170px; left: 40px; top: 610px;
+  }
 }
 
 @media  screen and (min-width: 481px) {
   .skateboard{
     width: 400px; 
+  }
+  .sticker1{
+    width: 320px; left: -12px; top: 440px;
+  }
+  .sticker2{
+    width: 100px; left: 150px; top: 510px;
+  }
+  .sticker3{
+    width: 100px; left: -150px; top: 710px;
+  }
+  .sticker4{
+    width: 100px; left: -150px; top: 510px;
+  }
+  .sticker5{
+    width: 210px; left: 80px; top: 820px;
   }
 }
 
@@ -470,22 +503,40 @@ header {
   .skateboard{
     width: 600px; 
   }
-}
-
-@media  screen and (min-width: 961px) {
-  .skateboard{
-    width: 900px; 
+  .sticker1{
+    width: 450px; left: -50px; top: 670px;
+  }
+  .sticker2{
+    width: 150px; left: 230px; top: 760px;
+  }
+  .sticker3{
+    width: 150px; left: -230px; top: 1080px;
+  }
+  .sticker4{
+    width: 150px; left: -230px; top: 760px;
+  }
+  .sticker5{
+    width: 330px; left: 120px; top: 1250px;
   }
 }
 
 @media  screen and (min-width: 1025px) {
   .skateboard{
-    width: 1000px; 
+    width: 800px; 
   }
-}
-
-@media  screen and (min-width: 1281px) {
-  .skateboard{
-    width: 1200px; 
+  .sticker1{
+    width: 600px; left: -80px; top: 900px;
+  }
+  .sticker2{
+    width: 190px; left: 310px; top: 1020px;
+  }
+  .sticker3{
+    width: 190px; left: -310px; top: 1450px;
+  }
+  .sticker4{
+    width: 190px; left: -310px; top: 1020px;
+  }
+  .sticker5{
+    width: 450px; left: 180px; top: 1670px;
   }
 }
