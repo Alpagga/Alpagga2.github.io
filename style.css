@@ -116,39 +116,10 @@ a {
   text-decoration: none;
 }
 
-.buttonGalleryVideo, .buttonGalleryPrint, .buttonGallerySticker, .buttonGalleryMusic{
-  background: black;
-  height: 8vh;
-  width: 200px;
-  text-align: center;
-  position: absolute;
-  cursor: pointer;
-  border-radius: 4px;
-  top: 0;
-}
-
-@media  screen and (min-width: 576px) {
-  .textGalleryVideo, .textGalleryPrint, .textGallerySticker{
-    padding: 0.4em 7em;
-  }
-}
-
-.textGalleryVideo, .textGalleryPrint, .textGallerySticker, .textGalleryMusic{
-  font-family: Isobare-Regular;
-  font-size: 2em;
-  color: rgb(250, 125, 0);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-52%);
-  left: 0;
-  right: 0;
-}
-.textGalleryVideo, .textGalleryPrint, .textGallerySticker{
-  border-bottom: 1px solid rgb(250, 125, 0);
-  padding: 0.5em ;
-}
-
+/*******/
 /*Waves*/
+/*******/
+
 .wave-top {
   position: absolute;
   top: 0vh;
@@ -164,6 +135,50 @@ a {
     left: 0;
     width: 100vw;
     height: 30vh;
+  }
+
+  @media  screen and (max-width: 800px) {
+    .wave-bottom, .wave-top{
+      height: 25vh;
+    }
+  }
+
+  .textGalleryVideo, .textGalleryPrint, .textGallerySticker, .textGalleryMusic{
+    font-family: Isobare-Regular;
+    color: rgb(250, 125, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 2em ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  @media  screen and (max-width: 800px) {
+    .textGalleryVideo, .textGalleryPrint, .textGallerySticker, .textGalleryMusic{
+      margin-top: 1vh;
+      font-size: 1.3em;
+    }
+  }
+
+  .seperator{
+    position: absolute;
+    background: rgb(250, 125, 0);
+    height: 0.2vh;
+    width: 20em;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  @media  screen and (max-width: 800px) {
+    .seperator{
+      width: 10em;
+    }
   }
 
   
